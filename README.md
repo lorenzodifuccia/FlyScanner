@@ -1,5 +1,5 @@
 # FlyScanner
-Find the best rate for your next flight consulthing different providers!
+Find the best rate for your next flight consulting different providers!
 
 > **Note:** I'm not responsible for the use of this program, this is only for personal and educational purpose. Before any usage please read provider's Terms of Service.  
 
