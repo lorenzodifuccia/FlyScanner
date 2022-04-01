@@ -44,7 +44,7 @@ Find the best rate for your next flight consulting different providers!
   ...
 ```
 
-- Seach (default provider, no stop date)
+- Search (default provider, no stop date)
 ```bash
 ~$ python3 flyscanner.py --search --departure ROM --destination LON --date 2022-04-01
 
@@ -70,7 +70,7 @@ Searching for 2022-04-01 ...
 # Use Ctrl-C to stop the search
 ```
 
-- Seach (with stop date)
+- Search (with stop date)
 ```bash
 ~$ python3 flyscanner.py --search --departure ROM --destination LON --date 2022-04-01 --to-date 2022-04-02      
 
