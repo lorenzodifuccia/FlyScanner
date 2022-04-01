@@ -135,7 +135,8 @@ if __name__ == "__main__":
     search_group.add_argument("--destination", "--to", "-t", type=str, metavar="IATA")
     search_group.add_argument("--date", "-d", type=str, metavar="YYYY-MM-DD")
     search_group.add_argument("--to-date", type=str, metavar="YYYY-MM-DD")
-    search_group.add_argument("--passengers", metavar="#", default=1, type=int)
+    search_group.add_argument("--passengers", metavar="#", default=1, type=int,
+                              help="Number of adult passengers (default 1)")
 
     output_group = parser.add_argument_group("output options")
     output_group_mutual = output_group.add_mutually_exclusive_group()
@@ -143,7 +144,8 @@ if __name__ == "__main__":
                                      help="Show all fly options for the day, not only the cheepest")
     output_group_mutual.add_argument("--list", action='store_true', help="Reduce verbosity")
 
-    output_group.add_argument("--save", nargs='?', type=str, default=False, const="~/Desktop/FlyScannerTrips.xlsx")
+    output_group.add_argument("--save", nargs='?', type=str, default=False, const="~/Desktop/FlyScannerTrips.xlsx",
+                              help="Save the search output on a Excel spreadsheet")
 
     args = parser.parse_args()
     print("\n"
